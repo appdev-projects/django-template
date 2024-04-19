@@ -1,0 +1,23 @@
+{
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "postCreateCommand": "pip install --user -r requirements.txt",
+  "containerEnv": {
+    "DATABASE_URL": "postgres://postgres:postgres@db/django_template",
+    "DJANGO_DEBUG": "1",
+    "ALLOWED_HOST_ALL": "1",
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  },
+  "portsAttributes": {
+    "8000": {
+      "label": "Live App Preview"
+    }
+  },
+  "forwardPorts": [8000]
+}
