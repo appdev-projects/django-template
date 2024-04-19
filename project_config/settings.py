@@ -29,6 +29,7 @@ DEBUG = bool(os.environ.get("DJANGO_DEBUG"))
 ALLOWED_HOSTS = [
     "0.0.0.0",
     "127.0.0.1",
+    "localhost",
 ]
 
 # Required for GitHub Codespaces development
