@@ -1,7 +1,7 @@
 {
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
-  "postCreateCommand": "pip install --user -r requirements.txt && python manage.py migrate",
+  "postCreateCommand": "pip install --user -r requirements.txt",
   "containerEnv": {
     "DATABASE_URL": "postgres://postgres:postgres@db/django_template",
     "DJANGO_DEBUG": "1",
