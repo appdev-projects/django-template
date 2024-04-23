@@ -36,6 +36,8 @@ ALLOWED_HOSTS = [
 if bool(os.environ.get("ALLOWED_HOSTS_ALL")):
     ALLOWED_HOSTS.append("*")
 
+CSRF_TRUSTED_ORIGINS = ["https://localhost:8000"]
+
 # Application definition
 
 INSTALLED_APPS = [
