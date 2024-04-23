@@ -5,7 +5,7 @@
   "containerEnv": {
     "DATABASE_URL": "postgres://postgres:postgres@db/django_template",
     "DJANGO_DEBUG": "1",
-    "ALLOWED_HOST_ALL": "1",
+    "ALLOWED_HOSTS_ALL": "1"
   },
   "customizations": {
     "vscode": {
